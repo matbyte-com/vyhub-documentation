@@ -1,8 +1,31 @@
 # Changelog
 
+## v3.0.0-beta4
+
+Released: 2025-01-21
+
+> This is a beta release. The frontend may contain bugs, the backend is stable. Please report all issues that you encounter.
+
+**Frontend:**
+
+- Fix server-side table pagination
+
+## v3.0.0-beta3
+
+Released: 2025-01-19
+
+> This is a beta release. The frontend may contain bugs, the backend is stable. Please report all issues that you encounter.
+
+**Frontend:**
+
+- Fix homepage builder
+- Fix reward settings
+- Fix payment gateway settings
+- Smaller improvements
+
 ## v3.0.0-beta1
 
-Released: 2025-01-14
+Released: 2025-01-16
 
 > This is a beta release. The frontend may contain bugs, the backend is stable. Please report all issues that you encounter.
 
