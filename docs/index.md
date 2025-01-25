@@ -9,8 +9,8 @@ Please read the [Quickstart](getting_started/cloud.md) guide to not miss anythin
 
 ## Questions Regarding the Payment of your VyHub Instance?
 
-VyHub instances are generally free to use, but there is a small commission on the money you make with the instance. So you only pay, when you make money.  
-Please first read the [VyHub Balance](central/account.md) guide. If you still have questions, please [contact](https://vyhub.net/support)  us.
+VyHub instances are generally free to use, but there is a small commission on the money you make with the instance. So you only pay when you make money.  
+Please first read the [VyHub Balance](central/account.md) guide. If you still have questions, please [contact](https://app.vyhub.net/support) us.
 
 ## Contact
 
