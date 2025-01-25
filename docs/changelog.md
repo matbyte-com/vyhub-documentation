@@ -1,5 +1,17 @@
 # Changelog
 
+## v3.0.0-beta5
+
+Released: 2025-01-25
+
+> This is a beta release. The frontend may contain bugs, the backend is stable. Please report all issues that you encounter.
+
+**Frontend:**
+
+- Fix problems with some missing form elements (ending memberships, webhook url, ...)
+- Fix problem with homepage builder form (editing mode exited too early)
+- Improve performance of the shop page
+
 ## v3.0.0-beta4
 
 Released: 2025-01-21
