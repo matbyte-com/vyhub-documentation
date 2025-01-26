@@ -1,5 +1,14 @@
 # Changelog
 
+Released: 2025-01-26
+
+> This is a beta release. The frontend may contain bugs, the backend is stable. Please report all issues that you encounter.
+
+**Frontend:**
+
+- Fix a problem with the welcome overlay that could not be clicked away
+
+
 ## v3.0.0-beta5
 
 Released: 2025-01-26
@@ -9,8 +18,8 @@ Released: 2025-01-26
 **Frontend:**
 
 - Fix problems with some missing form elements (ending memberships, webhook url, ...)
-- Fix problem with homepage builder form (editing mode exited too early)
-- Fix problem with doubled notifications
+- Fix a problem with homepage builder form (editing mode exited too early)
+- Fix a problem with doubled notifications
 - Improve performance of the shop page
 
 ## v3.0.0-beta4
