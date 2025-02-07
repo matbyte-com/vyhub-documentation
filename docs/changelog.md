@@ -10,6 +10,7 @@ Released: 2025-02-07
 
 - Fix double notifications when having more than 2 accounts linked together
 - Improve error message when TS3 credentials are missing
+- Fix PayPal subscriptions not working without customer address
 - Update dependencies
 
 **Frontend:**
