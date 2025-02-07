@@ -1,5 +1,30 @@
 # Changelog
 
+## v3.0.0-beta7
+
+Released: 2025-02-07
+
+> This is a beta release. The frontend may contain bugs, the backend is stable. Please report all issues that you encounter.
+
+**Backend:**
+
+- Fix double notifications when having more than 2 accounts linked together
+- Improve error message when TS3 credentials are missing
+- Update dependencies
+
+**Frontend:**
+
+- Improve position of help icon in forms
+- Add descriptions for the GMOD reserved slots feature
+- Fix setting secret values in server form (like TS3 username/password) not possible
+- Improve server form and add option to disable GMOD ban sync
+
+**On-Prem:**
+
+- The docker image now uses alpine and is smaller now
+
+## v3.0.0-beta6
+
 Released: 2025-01-26
 
 > This is a beta release. The frontend may contain bugs, the backend is stable. Please report all issues that you encounter.
