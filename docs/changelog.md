@@ -24,6 +24,10 @@ Released: 2025-02-07
 
 - The docker image now uses alpine and is smaller now
 
+**Update notes:**
+
+- If you are using vyhub-gmod, make sure to update to [version 2.0.9](https://github.com/matbyte-com/vyhub-gmod/releases)
+
 ## v3.0.0-beta6
 
 Released: 2025-01-26
