@@ -1,7 +1,6 @@
 site_name: VyHub Docs
 site_url: https://docs.vyhub.net
 repo_url: https://github.com/matbyte-com/vyhub-documentation
-edit_uri: edit/${extra.version}/docs/
 nav:
   - Welcome: index.md
   - "Getting Started":
@@ -67,7 +66,6 @@ theme:
     - navigation.top
     - navigation.tabs
     - content.code.copy
-    - content.action.edit
   icon:
     edit: material/pencil
 extra_css:
