@@ -67,7 +67,8 @@ theme:
     - navigation.tabs
     - content.code.copy
     - content.action.edit
-    - content.action.view
+  icon:
+    edit: material/pencil
 extra_css:
   - stylesheets/extra.css
 extra:
