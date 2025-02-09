@@ -9,8 +9,8 @@ Released: 2025-02-07
 **Backend:**
 
 - Fix double notifications when having more than 2 accounts linked together
-- Improve error message when TS3 credentials are missing
-- Fix PayPal subscriptions not working without customer address
+- Improve the error message when TS3 credentials are missing
+- Fix PayPal subscriptions not working without a customer address
 - Update dependencies
 
 **Frontend:**
@@ -18,7 +18,7 @@ Released: 2025-02-07
 - Improve position of help icon in forms
 - Add descriptions for the GMOD reserved slots feature
 - Fix setting secret values in server form (like TS3 username/password) not possible
-- Improve server form and add option to disable GMOD ban sync
+- Improve the server form and add an option to disable GMOD ban sync
 
 **On-Prem:**
 

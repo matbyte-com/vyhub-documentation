@@ -1,5 +1,6 @@
 site_name: VyHub Docs
 site_url: https://docs.vyhub.net
+repo_url: https://github.com/matbyte-com/vyhub-documentation
 nav:
   - Welcome: index.md
   - "Getting Started":
@@ -65,6 +66,8 @@ theme:
     - navigation.top
     - navigation.tabs
     - content.code.copy
+    - content.action.edit
+    - content.action.view
 extra_css:
   - stylesheets/extra.css
 extra:
