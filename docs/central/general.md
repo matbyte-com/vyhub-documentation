@@ -5,9 +5,9 @@ your VyHub instance are handled. You can log in with your VyHub account and get 
 
 ## Available Guides
 
-**Create your first website for your gameserver** [Instance/Website Guide](instance.md)
-**Set up your custom domain**[Custom Domain Guide](custom_domain.md)
-**Earn money through the VyHub Affiliate Program**[Affiliate Guide](affiliate.md)
+- **Create your first website for your gameserver** [Instance/Website Guide](instance.md)
+- **Set up your custom domain**[Custom Domain Guide](custom_domain.md)
+- **Earn money through the VyHub Affiliate Program**[Affiliate Guide](affiliate.md)
 
 ## Relevant Links
 
