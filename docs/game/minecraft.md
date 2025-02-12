@@ -6,7 +6,7 @@ Download Link:
 
 ## Compatible Minecraft Plugin APIs
 
-- Bukkit/Spigot/Paper (>=1.12)
+- Bukkit/Spigot/Paper (>=1.15)
 - BungeeCord/Waterfall
 - Velocity
 
