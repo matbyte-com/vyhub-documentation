@@ -59,6 +59,9 @@ Repeat the previous step with the remaining objects. In this step, there is no f
 
 ### 4. Packets
 
+You can now **create the rewards** for all your packets.
+You can also apply rewards to applied packets later using the `Reward Sync` dialog in the reward settings.
+
 > If the list of GExtension packets in the packet translation dialog is empty, check your API URL and key.
 
 | Attribute | Description |
