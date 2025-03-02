@@ -1,5 +1,26 @@
 # Changelog
 
+## v3.0.0
+
+Released: 2025-03-02
+
+> This release includes all changes from the v3.0.0-beta versions (see below)
+
+**Backend:**
+
+- Fix too large values in warning config causing errors
+- Improve RCON error log
+- Allow to disable central login when using a self-hosted instance
+- Allow `<code>` tag in HTML content
+
+**Frontend:**
+
+- Improve homepage builder design
+- Smaller improvements
+- Do not hide authorization (Discord) settings in shop-only mode
+- Add server status to server settings
+- Fix stripe payment method field not working correctly
+
 ## v3.0.0-beta7
 
 Released: 2025-02-07
