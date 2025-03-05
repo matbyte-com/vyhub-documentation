@@ -1,5 +1,14 @@
 # Changelog
 
+## v3.0.2
+
+Released: 2025-03-05
+
+**Frontend:**
+
+- Fix group and reward from that were not loading correctly
+
+
 ## v3.0.0
 
 Released: 2025-03-02
@@ -10,7 +19,7 @@ Released: 2025-03-02
 
 - Fix too large values in warning config causing errors
 - Improve RCON error log
-- Allow to disable central login when using a self-hosted instance
+- Allow disabling central login when using a self-hosted instance
 - Allow `<code>` tag in HTML content
 
 **Frontend:**
