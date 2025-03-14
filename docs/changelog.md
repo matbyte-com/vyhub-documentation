@@ -1,5 +1,15 @@
 # Changelog
 
+## v3.0.3
+
+Released: 2025-03-14
+
+**Frontend:**
+
+- Fix enumerations in the editor
+- Fix buy for a friend
+- Fix the packet form in settings (non-advanced mode)
+
 ## v3.0.2
 
 Released: 2025-03-05
