@@ -1,17 +1,26 @@
 # Changelog
 
+## v3.0.5
+
+Released: 2025-04-06
+
+**Frontend:**
+
+- Fix html scripts on CMS pages
+- Fix edit gateway form for credit gateway
+
 ## v3.0.4
 
 Released: 2025-03-16
 
 **Backend:**
 
-- Fix problem with Discord Bot
+- Fix a problem with Discord Bot
 
 **Frontend:**
 
 - Fix problems with CMS pages
-- Fix ASA plugin download link in setup dialog
+- Fix the ASA plugin download link in setup dialog
 - Improve server setup dialog
 
 
