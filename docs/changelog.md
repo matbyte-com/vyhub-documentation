@@ -1,5 +1,14 @@
 # Changelog
 
+## v3.0.6
+
+Released: 2025-04-23
+
+**Frontend:**
+
+- Add subcategories to shop-only mode
+- Format currencies with correct locale 
+
 ## v3.0.5
 
 Released: 2025-04-06
