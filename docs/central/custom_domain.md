@@ -15,6 +15,17 @@ with [Namecheap](https://namecheap.pxf.io/MXzdRY).
    e.g. <a href="https://namecheap.pxf.io/MXzdRY" rel="nofollow">Namecheap*</a>)
 2. Set the domains CNAME record to the corresponding VyHub URL
 
+### CNAME Value
+
+Usually at registrars, the CNAME record consists of two parts:
+- **Name/Host**: The subdomain or root domain you want to use.
+  - This value has to match the url you set as frontend url in your VyHub instance.
+  - For the root domain (e.g., your-community.de), use `@` (not supported by every registrar).
+  - For a subdomain (e.g., shop.your-community.de), use `shop`.
+- **Value/Points to**: The value you need to set, which is provided on the instance details page of your VyHub instance.
+  - This value has to match the value shown on your instance details page.
+  - Example: `your-community.vyhub.app` or `your-community.serverstore.io`
+
 ### Set the domains CNAME record
 
 > You need to set the CNAME record to our servers, that you can reach VyHub with your domain.
@@ -30,6 +41,7 @@ Some guides are linked below:
 - [GoDaddy](https://www.godaddy.com/help/add-a-cname-record-19236)
 - [OVH](https://help.ovhcloud.com/csm/en-gb-dns-edit-dns-zone?id=kb_article_view&sysparm_article=KB0039608)
 - [Cloudflare](https://community.cloudflare.com/t/how-do-i-add-a-cname-record/59)
+
 
 ### My domain registrar does not support CNAME records for the root domain
 
