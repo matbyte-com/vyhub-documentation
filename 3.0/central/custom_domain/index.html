@@ -621,6 +621,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#cname-value" class="md-nav__link">
+    <span class="md-ellipsis">
+      CNAME Value
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#set-the-domains-cname-record" class="md-nav__link">
     <span class="md-ellipsis">
       Set the domains CNAME record
@@ -681,7 +690,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#cname-value" class="md-nav__link">
+  <a href="#cname-value_1" class="md-nav__link">
     <span class="md-ellipsis">
       CNAME Value
     </span>
@@ -1805,6 +1814,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#cname-value" class="md-nav__link">
+    <span class="md-ellipsis">
+      CNAME Value
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#set-the-domains-cname-record" class="md-nav__link">
     <span class="md-ellipsis">
       Set the domains CNAME record
@@ -1865,7 +1883,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#cname-value" class="md-nav__link">
+  <a href="#cname-value_1" class="md-nav__link">
     <span class="md-ellipsis">
       CNAME Value
     </span>
@@ -1921,6 +1939,15 @@ with <a href="https://namecheap.pxf.io/MXzdRY">Namecheap</a>.</p>
    e.g. <a href="https://namecheap.pxf.io/MXzdRY" rel="nofollow">Namecheap*</a>)</li>
 <li>Set the domains CNAME record to the corresponding VyHub URL</li>
 </ol>
+<h3 id="cname-value">CNAME Value</h3>
+<p>Usually at registrars, the CNAME record consists of two parts:
+- <strong>Name/Host</strong>: The subdomain or root domain you want to use.
+  - This value has to match the url you set as frontend url in your VyHub instance.
+  - For the root domain (e.g., your-community.de), use <code>@</code> (not supported by every registrar).
+  - For a subdomain (e.g., shop.your-community.de), use <code>shop</code>.
+- <strong>Value/Points to</strong>: The value you need to set, which is provided on the instance details page of your VyHub instance.
+  - This value has to match the value shown on your instance details page.
+  - Example: <code>your-community.vyhub.app</code> or <code>your-community.serverstore.io</code></p>
 <h3 id="set-the-domains-cname-record">Set the domains CNAME record</h3>
 <blockquote>
 <p>You need to set the CNAME record to our servers, that you can reach VyHub with your domain.</p>
@@ -1969,7 +1996,7 @@ Add to cart and follow the checkout process</p>
 <blockquote>
 <p>You do not need to add any of the "recommended packages" namecheap offers.</p>
 </blockquote>
-<h3 id="cname-value">CNAME Value</h3>
+<h3 id="cname-value_1">CNAME Value</h3>
 <p><img alt="Find the CNAME value" src="../../assets/custom_domain_guide/instance_details_page.png" />
 Find the value on the instance details page</p>
 <h3 id="setting-the-cname-with-a-namecheapcom-domain">Setting the CNAME with a Namecheap.com domain</h3>
