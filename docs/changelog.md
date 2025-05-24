@@ -1,5 +1,35 @@
 # Changelog
 
+
+## v3.0.9
+
+Released 2025-05-10
+
+**Frontend:**
+
+- Improve the shop reward form
+- Fix a problem with the shop packet form in non-advanced mode
+
+**Backend:**
+
+- Mail: allow UTF-8 mail addresses
+
+## v3.0.8
+
+Released: 2025-05-03
+
+**Frontend:**
+
+- Increase the maximum length of content in forum threads and posts
+
+## v3.0.7
+
+Released: 2025-04-28
+
+**Frontend:**
+
+- Fix a problem with the navigation-settings view not loading correctly
+
 ## v3.0.6
 
 Released: 2025-04-23
