@@ -2,6 +2,8 @@
 
 VyHub can be customized in various aspects. You can create your own theme, add custom navigation links, create custom HTML pages, and more.
 
+The biggest customization option is the `Shop-Only` mode - this mode disables or hides everything that is not shop-related. This mode can be enabled in the `General` settings.
+
 You can find predefined themes in the settings under `Themes` on the top-right.
 
 ## Theme

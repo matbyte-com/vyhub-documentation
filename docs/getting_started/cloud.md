@@ -23,6 +23,12 @@ installation process. You can find the frontend URL on the details page of your 
 All further steps are accomplished within the settings panel of your VyHub instance  
 `(your-domain.com/settings)`
 
+## Shop Only or Full Mode
+
+VyHub offers a shop only mode that hides or disables all features that are not shop related. This helps if you do not
+want to use all the other features of VyHub. Switching between these modes can be done at any time in the
+`General Settings` of your instance.
+
 ## Connect your Gameserver
 
 One of the first things to do is to connect your gameserver with VyHub.
@@ -49,7 +55,8 @@ You can now create all the user groups that you want.
     - The permission level is used to decide which users can be targeted by a member of the group
         - e.g., A user with permission level 42 can't target another user with the level of 99.
 
-> A [group](../guide/group/group.md) has [properties](../guide/group/property.md) to control the user right management and access
+> A [group](../guide/group/group.md) has [properties](../guide/group/property.md) to control the user right management
+> and access
 > control.  
 > Additional to properties, admins have all permissions. More admins can be added
 > on [app.vyhub.net](https://app.vyhub.net).
