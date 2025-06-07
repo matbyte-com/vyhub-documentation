@@ -1,9 +1,25 @@
 # Changelog
 
+## v3.0.10
+
+Released: 2025-06-07
+
+**Frontend:**
+
+- Improve property picker
+- Improve translations
+- Fix problem with checkout checkboxes
+
+**Backend:**
+
+- Improve steam API usage, allow to supply a custom Steam API Key per instance
+  - It's highly recommended to set your own key in Settings -> Authorization -> Steam
+- Enable regular sync of user data if a Steam API key is set
+- Add unsubscribe link to notification emails
 
 ## v3.0.9
 
-Released 2025-05-10
+Released: 2025-05-10
 
 **Frontend:**
 
