@@ -13,7 +13,7 @@ Released: 2025-06-07
 **Backend:**
 
 - Improve steam API usage, allow to supply a custom Steam API Key per instance
-  - It's highly recommended to set your own key in Settings -> Authorization -> Steam
+    - It's highly recommended to set your own key in Settings -> Authorization -> Steam
 - Enable regular sync of user data if a Steam API key is set
 - Add unsubscribe link to notification emails
 
