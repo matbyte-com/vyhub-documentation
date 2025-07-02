@@ -5,7 +5,7 @@ section of the docs.
 
 ## Get your VyHub Instance
 
-Using VyHub for your gaming community is as easy as a few clicks are.
+Using VyHub for your gaming community is as easy as a few clicks.
 
 1. Create your account on [app.vyhub.net](https://app.vyhub.net).
 2. Go to the [Dashboard](https://app.vyhub.net/dashboard) and click `Create Instance`.
