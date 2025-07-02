@@ -17,7 +17,7 @@ your use case.
 ## Assigning Groups
 
 Groups can be assigned to users in the `User Dashboard` in the group section.
-Furthermore, groups can be used as a reward in the shop can be assigned automatically through the
+Furthermore, groups can be used as a reward in the shop and can be assigned automatically through the
 `VyHub Group` [shop reward](../shop/reward.md).
 
 ## Properties
