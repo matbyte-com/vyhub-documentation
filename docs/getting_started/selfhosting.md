@@ -56,7 +56,7 @@ For hosting VyHub, some requirements must be met:
 
 7. In `.env`, insert your Steam API key that can be generated [here](https://steamcommunity.com/dev/apikey).
 
-    If you know wht you are doing, you can further adjust config parameters. They are documented [here](https://github.com/matbyte-com/vyhub-onprem#environment-variables).
+    If you know what you are doing, you can further adjust config parameters. They are documented [here](https://github.com/matbyte-com/vyhub-onprem#environment-variables).
 
 8. In `docker-compose.override.yml`, change the vyhub image version to the newest version (see [changelog](../changelog.md))
 
