@@ -39,7 +39,7 @@ until the purpose for the data processing ceases to apply. If you assert a
 legitimate request for deletion or revoke consent for data processing,
 your data will be deleted, unless we have other legally permissible reasons for storing your
 personal data (e.g. retention periods under tax law or commercial law); in the
-the latter case, the deletion will take place after these reasons have ceased to exist.
+latter case, the deletion will take place after these reasons have ceased to exist.
 <h3 class="display-h4">Registration</h3>
 You need to register with us to use our products. We save your personal login details
 (e.g. email, password) within the registration process.
@@ -47,7 +47,7 @@ You need to register with us to use our products. We save your personal login de
 This site uses SSL or TLS encryption to protect the transmission of confidential content, such
 as login data, order or payment information. <br/>
 If the SSL or TLS encryption is activated, the data that you transmit to us cannot
-read by third parties
+be read by third parties
 <h3 class="display-h4">Contact and your Rights</h3>
 As a data subject, you have the following rights: <br/>
 In accordance with Art. 15 GDPR, you have the right to request information about your
