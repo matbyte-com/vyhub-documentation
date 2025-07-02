@@ -59,7 +59,7 @@ Supported Stripe API version: 2024-06-20 and older
 > If you want to test the payments with a test account first, do the steps below, but with a `TEST` application.
 
 1. [Create a Stripe account](https://dashboard.stripe.com/register) or log into your existing one.
-2. (Only required before Sepember 2024) Enable
+2. (Only required before September 2024) Enable
    `Stripe Workbench` [here](https://dashboard.stripe.com/settings/early_access).
 3. Open [Stripe Workbench](https://dashboard.stripe.com/workbench/overview) and locate the `API keys` section.
 4. In your VyHub instance, create a Stripe payment gateway, insert your `Public Key` and `Private Key` and select your
@@ -89,7 +89,7 @@ Supported Stripe API version: 2024-06-20 and older
 2. In your VyHub instance, create a Paysafecard payment gateway, insert your `API Key` and select your
    desired `Environment`.
 3. Click `Create`.
-4. As no IP addresses can be whitelisted, ask paysafecard to give you a cryptographic certificate for authentification.
+4. As no IP addresses can be whitelisted, ask paysafecard to give you a cryptographic certificate for authentication.
    The private key (`Client Key`) and certificate (`Client Certificate`) can be set in the payment gateway settings.
    The `Client Certificate` is usually in a file named something
    like `001_manXXXXXXXXXX_XXXXXXXX_distributor_paysafecard_com.crt`.
