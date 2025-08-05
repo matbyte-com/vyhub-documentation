@@ -4,27 +4,26 @@ This article is about the pricing of VyHub instances and how payments are settle
 
 ## Pricing of VyHub
 
-Every VyHub instance is free to use, but a small commission* is charged on your revenue. So you only pay for
-VyHub when you make money.
+> The free plan has been discontinued to enhance our user experience. We believe in offering comprehensive features
+> without arbitrary limitations, and this change allows us to provide better support and resources for our users.
 
 <sub>Non-EUR currencies are converted to EUR at the end of the billing cycle.</sub>
 
-| Percentage | Plan      |
-|------------|-----------|
-| 5%         | Free Plan |
-| 3.8%       | Pro Plan  |
+| Percentage | Plan              |
+|------------|-------------------|
+| 3.8%       | Pro Plan          |
+| 3%         | Self-Hosting Plan |
 
-### Example Revenues
+### Example Revenues Fee
 
-You will not pay for VyHub unless you earn money through the shop.  
+You will pay the base-price for your VyHub unless you earn money through the shop.  
 The more revenue you generate, the more you save on fees, as can be seen in the following table:
 
-| Revenue generated through VyHub | Formula          | Total to pay | Comparable competitor* |
-|---------------------------------|------------------|--------------|------------------------|
-| 0.00 €                          | -                | 0.00 €       | 14.00 €                |
-| 222.00 €                        | 222.00 € × 5%    | 11.10 €      | 25.10 €                |
-| 2700.00 €                       | 2700.00 € × 5%   | 135.00 €     | 149.00 €               |
-| 2700.00 € (with Pro Plan)       | 2700.00 € × 3.8% | 102.00 €     | 149.00 €               |
+| Revenue generated through VyHub | Formula                   | Total to pay | Comparable competitor* |
+|---------------------------------|---------------------------|--------------|------------------------|
+| 0.00 €                          | 14.99€                    | 14.99 €      | 14.00 €                |
+| 222.00 €                        | 14.99€ + 222.00 € × 3.8%  | 23.43 €      | 25.10 €                |
+| 2700.00 €                       | 14.99€ + 2700.00 € × 3.8% | 117.59 €     | 149.00 €               |
 
 <sub>* Comparable competitor with a 5% commission and extra cost for SSL-Certificate and domain.</sub>
 
@@ -37,7 +36,9 @@ dashboard [https://app.vyhub.net/dashboard](https://app.vyhub.net/dashboard).
 ## Payment of your Instance
 
 During the month, the revenue of your instance is collected and reflected in
-your [VyHub Balance](https://app.vyhub.net/account).  
+your [VyHub Balance](https://app.vyhub.net/account). When setting up your VyHub instance, a membership is automatically
+created. Life-time users have to top up manually or enable Auto-Charge for their account.
+
 At the end of the month, all costs of the month come into effect and will be debited from your VyHub Balance.
 You then have __7 days__ to settle up your negative balance, either manually or automatically (Auto-Charge). The payment
 deadline is extended to __22 days__ when Auto-Charge is enabled.
