@@ -1,5 +1,17 @@
 # Changelog
 
+## v3.1.0
+
+Released: 2025-08-06
+
+>The free plan has been discontinued to enhance our user experience. We believe in offering comprehensive features
+> without arbitrary limitations, and this change allows us to provide better support and resources for our users.
+
+**Frontend/Backend**
+
+- Add support for image upload additionally to image-urls
+
+
 ## v3.0.10
 
 Released: 2025-06-07
