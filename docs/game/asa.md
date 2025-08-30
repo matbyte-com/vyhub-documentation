@@ -52,7 +52,7 @@ For Ark Survival Ascended, the following types of rewards are supported:
 The following string replacements are available for rewards:
 
 - `%user_id%`: The VyHub user id
-- `%nick%`: The players in-game nickname
+- `%nick%`: The player’s in-game nickname
 - `%player_id%`: The players EOSID
 - `%applied_packet_id%`: The id of the applied packet
 - `%packet_title%`: The title of the packet

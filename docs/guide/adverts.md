@@ -5,12 +5,12 @@ The interval can be changed per server in the configuration file of the game int
 
 ## Attributes
 
-| Attribute    | Description                                                             |
-|--------------|-------------------------------------------------------------------------|
-| Title        | Title of the advert, not shown to users.                                |
-| Content      | The content that should be printed to the chat. Multiple lines allowed. |
-| Color        | The color of the advert message. Not supported by Minecraft.            |
-| Serverbundle | The serverbundles where the advert should be shown.                     |
+| Attribute    | Description                                                                        |
+|--------------|------------------------------------------------------------------------------------|
+| Title        | Title of the advert, not shown to users.                                           |
+| Content      | The content that should be printed to the chat. Multiple lines allowed.            |
+| Color        | The color of the advert message. (Minecraft uses its own color codes, see below.)  |
+| Serverbundle | The serverbundles where the advert should be shown.                                |
 
 ## Text Colors
 It is possible to change the text color within the message by using color tags.
@@ -27,7 +27,7 @@ Available colors are:
 - pink
 
 ### Minecraft
-In Minecraft, additional colors can be used by using the `§` notiation.
+In Minecraft, additional colors can be used by using the `§` notation.
 
 See `Chat Codes` [here](https://www.digminecraft.com/lists/color_list_pc.php).
 

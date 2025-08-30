@@ -16,6 +16,6 @@ Before a user can buy your packets, some configuration is needed.
 | Invoice Logo URL                          | URL to a logo image that is shown on the invoice                                                              |
 | Purchases from countries without tax rule | If enabled, purchases from countries where you did not define a tax rule are possible                         |
 | Tax included in packet price              | Instead of adding taxes to the specified packet price on top, they are included in the price.                 |
-| Checkout Checkboxes                       | Checkboxes which have to be agreed to during checkout. E.g. "I aggree to the Terms of Service"                |
+| Checkout Checkboxes                       | Checkboxes which have to be agreed to during checkout. E.g. "I agree to the Terms of Service"                |
 
 

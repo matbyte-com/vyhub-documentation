@@ -1,7 +1,7 @@
 # Setup VyHub Selfhosting
 
 This is the setup guide for VyHub Selfhosting.
-The Selfhosting version allows to host VyHub on your own server.
+The Selfhosting version allows you to host VyHub on your own server.
 
 ## Prerequisites
 
@@ -10,7 +10,7 @@ For hosting VyHub, some requirements must be met:
 - **Someone who knows how to use linux and docker**
 - A linux server (virtual or dedicated)
     - At least 2 CPU cores and 4GB RAM
-    - If a virtual server is used, make sure that the vCPU supports `x86-64-v2` or higer. A script that displays the supported architecture can be found at `tools/cpucheck` in the `vyhub-onprem` repository.
+    - If a virtual server is used, make sure that the vCPU supports `x86-64-v2` or higher. A script that displays the supported architecture can be found at `tools/cpucheck` in the `vyhub-onprem` repository.
     - Recommended: A recent Debian or Ubuntu LTS version
     -  [Install Docker Server](https://docs.docker.com/engine/install/#server)
     -  [Install Docker Compose Plugin](https://docs.docker.com/compose/install/linux/#install-using-the-repository)
@@ -21,7 +21,7 @@ For hosting VyHub, some requirements must be met:
     - When not using Cloudflare: Setup certbot to get a LetsEncrypt certificate
     - When using Cloudflare: Generate a free origin certificate on the Cloudflare dashboard
 - Backup
-    - You should regularily create backups  of your server, including the VyHub database
+    - You should regularly create backups  of your server, including the VyHub database
 
 ## Creating and activating the selfhosting instance
 
@@ -50,7 +50,7 @@ For hosting VyHub, some requirements must be met:
 
     If you are using certbot, consider creating a symbolic link to the actual cert/key with `ln -s`.
 
-5. **SWITCH** Go the the dashboard of your instance at [app.vyhub.net](https://app.vyhub.net) and click on the `Setup` button. Follow the instructions there.
+5. **SWITCH** Go to the dashboard of your instance at [app.vyhub.net](https://app.vyhub.net) and click on the `Setup` button. Follow the instructions there.
 
 6. **SWITCH BACK** After finishing the setup dialog, go back to this page.
 

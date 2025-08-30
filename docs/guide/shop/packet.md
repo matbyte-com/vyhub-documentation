@@ -11,7 +11,7 @@ Item Drops. The rewards need to be set up in the [`Reward`](./reward.md) setting
 | Buyable                | If disabled, packet can not be bought anymore                                              |
 | Buyable active state   | If disabled, packet can not be purchased if the user already has this packet active        |
 | Buyable inactive state | If disabled, packet can not be purchased if the user already has this packet, but inactive |
-| Recommendable          | Whether the packet will be recommended during the purchase as a upsell                     |
+| Recommendable          | Whether the packet will be recommended during the purchase as an upsell                     |
 
 ## Payment
 
@@ -21,7 +21,7 @@ Item Drops. The rewards need to be set up in the [`Reward`](./reward.md) setting
 | Currency                         | The currency of the price                                                                                                                                                        |
 | Credits                          | [Optional] Credit price of packet (leave empty if the packet should not be purchasable by credits)                                                                               |
 | Custom Price / Pay what you want | [Optional] The user can decide how much he wants to pay. The selected price/credits is used as minimum price.                                                                    |
-| Recurring                        | Recurring payments every time the **active for** duration is expired - this limits the choice of payment gateways to these that support it. Currently **Stripe** and **PayPal**. |
+| Recurring                        | Recurring payments every time the **active for** duration is expired - this limits the choice of payment gateways to those that support it. Currently **Stripe** and **PayPal**. |
 
 ## Packet Relations
 

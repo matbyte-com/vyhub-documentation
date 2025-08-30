@@ -41,7 +41,7 @@ to newly register.
 | Attribute | Description                        |
 |-----------|------------------------------------|
 | Title     | Title of thread                    |
-| Status    | Used to close and achieve a thread |
+| Status    | Used to close and archive a thread |
 
 ### Post
 
@@ -54,7 +54,7 @@ to newly register.
 - Admins and users with the `forum_edit` property can edit everything and can create topic categories and topics.
 - Topic admins can be set in the topic settings. They can edit and delete every thread and every post of users. You can consider them as moderators.
 - The edit_post setting in the topic is used to allow users to edit their own posts. Otherwise, users cannot edit their posts.
-- Team-only parts of the forum is possible with [requirement sets](requirement_set.md). 
+- Team-only parts of the forum are possible with [requirement sets](requirement_set.md). 
 
 ## FAQ
 
@@ -62,4 +62,4 @@ to newly register.
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | __Question:__ I have bought the forum addon. Why can't I find it? <br>  __Solution:__ You need to also activate the Forum in the general settings of your instance.                                       |
 | __Question:__ Users can't edit their posts, how do I change that? <br> __Solution:__ You can find the `edit_post` setting in the settings of the respective topic.                                        |
-| __Question:__ I want to create a team only forum. is that possible? <br> __Solution:__ Yes, that is possible with requirement sets. Find examples in the [requirement](requirement_set.md) documentation. |
+| __Question:__ I want to create a team only forum. Is that possible? <br> __Solution:__ Yes, that is possible with requirement sets. Find examples in the [requirement](requirement_set.md) documentation. |

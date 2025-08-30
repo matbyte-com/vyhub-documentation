@@ -18,11 +18,11 @@ A command might look like this:
 
 ### Group Sync
 
-VyHub's group sync is a more advanced way to assign groups to users. It is more complicated to set up but offers more
+VyHub's group sync is a more advanced way to assign groups to users. It is more complicated to set up, but it offers
 some cool advantages over the simple command solution.
 
 1. The current groups of a user are displayed in the VyHub user dashboard. This allows players to directly distinguish
-   between vips, admins, etc.
+   between VIPs, admins, etc.
 2. The group sync is a two-way sync. This means that if a user is assigned a group in-game, this group is also assigned
    in VyHub.
 3. The group sync is less error-prone, as the groups are kept in sync, and it is not dependent on commands that might
