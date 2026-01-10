@@ -1,5 +1,14 @@
 # Changelog
 
+## v3.1.4
+
+Released: 2026-01-10
+
+
+**Backend:**
+
+- Fixed api not returning all bans/warnings when using custom API keys
+
 ## v3.1.0
 
 Released: 2025-08-06
