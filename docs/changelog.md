@@ -1,9 +1,21 @@
 # Changelog
 
+## v3.2.0
+
+Released: 2026-02-01
+
+**Backend:**
+
+- Several performance improvements
+- Removed "value" field from group properties
+
+**Frontend:**
+
+- Fixed removing end-date of a group membership not possible
+
 ## v3.1.4
 
 Released: 2026-01-10
-
 
 **Backend:**
 
