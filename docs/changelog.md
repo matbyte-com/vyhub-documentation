@@ -1,5 +1,13 @@
 # Changelog
 
+## v3.2.2
+
+Released: 2026-02-10
+
+**Backend:**
+
+- Fixed an internal server error when creating/editing groups
+
 ## v3.2.0
 
 Released: 2026-02-01
