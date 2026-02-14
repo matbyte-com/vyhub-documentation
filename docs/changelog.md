@@ -1,5 +1,16 @@
 # Changelog
 
+## v3.2.3
+
+Released: 2026-02-14
+
+**Frontend:**
+
+- [Homepage Builder] Fix FiveM Server had wrong image
+- [Homepage Builder] Allow customizing server images
+- [Homepage Builder] Fix some edit dialogs closing unexpectedly
+- [Homepage Builder] Improve design of server status
+
 ## v3.2.2
 
 Released: 2026-02-10
