@@ -1,5 +1,13 @@
 # Changelog
 
+## v3.2.4
+
+Released: 2026-02-18
+
+**Frontend:**
+
+- Fix problems with some forms
+
 ## v3.2.3
 
 Released: 2026-02-14
