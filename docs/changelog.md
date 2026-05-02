@@ -1,5 +1,14 @@
 # Changelog
 
+## v3.3.0
+
+Released: 2026-05-03
+
+- Add import/export option for the VyHub database
+- Improve performance of groups and memberships
+- Fix error when adding multiple memberships at once in large instances
+- Add option to manage multiple purchases at once
+
 ## v3.2.4
 
 Released: 2026-02-18
