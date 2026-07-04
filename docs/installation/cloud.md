@@ -10,10 +10,11 @@ Using VyHub for your gaming community is as easy as a few clicks are.
 1. Create your account on [app.vyhub.net](https://app.vyhub.net).
 2. Go to the [Dashboard](https://app.vyhub.net/dashboard) and click `Create Instance`.
 3. Fill out the required details. See [instance guide](../central/instance.md) for more information.
-4. Click `Submit`.
+4. Click `Submit`. A packet for your instance is added to your cart.
+5. Complete the payment for the packet in your cart.
 
-Your VyHub instance is usually created within a few minutes. Your instance is ready as soon as the status changes to
-`Provisioned`. You can find the status by visiting the instance details page.
+After the payment is completed, your VyHub instance is created. It is usually ready within a few minutes, as soon as the
+status changes to `Provisioned`. You can find the status by visiting the instance details page.
 
 ## Open your VyHub Instance
 

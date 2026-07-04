@@ -3,14 +3,16 @@ site_url: https://docs.vyhub.net
 repo_url: https://github.com/matbyte-com/vyhub-documentation
 nav:
   - Welcome: index.md
-  - "Getting Started":
-    - getting_started/cloud.md
-    - getting_started/selfhosting.md
+  - "Installation":
+    - "VyHub Cloud": installation/cloud.md
+    - "VyHub Self-Hosted":
+      - installation/selfhosting/setup.md
+      - installation/selfhosting/updating.md
+      - installation/selfhosting/backups.md
   - "VyHub.net":
     - central/general.md
     - central/instance.md
     - central/custom_domain.md
-    - central/account.md
     - central/affiliate.md
   - Guide:
     - Shop:
@@ -79,7 +81,9 @@ plugins:
   - search
   - redirects:
       redirect_maps:
-        'quickstart.md': 'getting_started/cloud.md'
+        'quickstart.md': 'installation/cloud.md'
+        'getting_started/cloud.md': 'installation/cloud.md'
+        'getting_started/selfhosting.md': 'installation/selfhosting/setup.md'
 markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true
@@ -88,3 +92,5 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true

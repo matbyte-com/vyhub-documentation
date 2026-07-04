@@ -1,48 +1,37 @@
-# Affiliate and Partner Program
+# Refer a Friend
 
-VyHub offers an affiliate partner program. Anybody can join the partner program.
+Do you enjoy VyHub? Share it with your friends and other communities and earn a commission for every user you refer.
+Anybody can join, no matter if you run a single community or a larger network.
 
-## Potential Partners
-The following partners are usually well suited to become part of our affiliate program.
+## Ways to Share VyHub
 
-- Game server hosting companies
-- Game community lists
-- Gaming new sites with technical focus
+You can be completely creative in how you share VyHub, but some methods have proven more successful than others.
+Here is a short list of ideas:
 
-## Recommended Ways of Advertising
-You can be completely creative in your advertising for VyHub, but some methods have been proven more successful than others.
-Here is a short list of potential ways of advertising:
-
-- (Technical) Blog entries with backlink
-- News articles with backlinks
+- Recommend VyHub to friends running their own gameservers
 - (Video-) Tutorials
 - YouTube, Instagram, TikTok shorts / reels
-- General backlink to our website
+- Blog entries or articles with a backlink
+- A general backlink to our website
 
 At the end of this document, you find some example banners you can use.
 
-## Affiliate Commission
+## Commission
 
-You as an affiliate will receive an uncapped commission of 25% from each payment, the referred user makes with us.
+You will receive an uncapped commission of 15% from each payment the referred user makes with us.
 Users pay for:
 
-* Recurring VyHub instance cost Payments to settle the shop-commission 
+* Recurring VyHub instance cost Payments
 * Payment for premium add-ons
 * Other VyHub services
 
-## Schematic Explanation
 
-This diagram explains what part of the payment you receive.
-
-![Affiliate Schematic](../assets/affiliate_guide/system_schematic.png)
-
-
-## Balances in Your Partner Dashboard
+## Balances in Your Dashboard
 
 - Current Balance: this money is ready to be paid out. You can create a payout.
 - Pending Balance: this money is money that your referred user is obliged to pay us or already has paid us. We then need to run some validity checks. Afterwards, the amount is credited to your total balance.
 - Total Paid: this amount has already been paid out to you
-- Registered Users: the number of users who have registered through your affiliate link
+- Registered Users: the number of users who have registered through your referral link
 
 ## Payout
 
@@ -55,23 +44,4 @@ Payouts are processed manually, so it might take a while to pay out.
 - Bank Account (IBAN)
 
 ### Transaction Fees
-The affiliate will bear all potential transaction costs
-
-## Banners
-Here are a few banners you can use for your affiliate purposes. Feel free to create your own.
-
-
-<img src="https://cdn.vyhub.net/docs/affiliate/vyhub1.jpg" height="250px" width="600px"></img>  
-<img src="https://cdn.vyhub.net/docs/affiliate/vyhub2.jpg" height="400px" width="600px"></img>  
-<img src="https://cdn.vyhub.net/docs/affiliate/vyhub3.jpg" height="400px" width="600px"></img>  
-
-
-## Logos 
-Here are our logos in high-quality you can use for your affiliate purposes.   
-
-
-<img src="https://cdn.vyhub.net/logos/vyhub_logo_v2_icon_red_on_white.png" height="100px" width="100px"></img>
-<img src="https://cdn.vyhub.net/logos/vyhub-short-white.png" height="100px" width="100px"></img>   
-<img src="https://cdn.vyhub.net/logos/vyhub_logo_v2_red_darkgrey_on_trans.png" height="150px" width="300px"></img>   
-
-
+You will bear all potential transaction costs

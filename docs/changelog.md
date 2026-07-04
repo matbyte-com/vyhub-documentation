@@ -973,7 +973,7 @@ Released: 2023-04-05
 
 Central:
 
-- VyHub instances are now free to use, [but paid with a small revenue commission](central/account.md) 
+- VyHub instances are now free to use, but paid with a small revenue commission
 - Add VyHub Balance panel
 - Add Affiliate panel
 
