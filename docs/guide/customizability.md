@@ -10,15 +10,23 @@ You can find predefined themes in the settings under `Themes` on the top-right.
 
 ### Attributes
 
-| Attribute                                          | Description                                                                                                         |
-|----------------------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| Header / Primary / Success / Warning / Error Color | Color theme                                                                                                         |
-| Background Image URL                               | URL of a background image (leave empty if color is preferred)                                                       |
-| Background Color                                   | Background color (is replaced by background image, if set)                                                          |
-| Logo URL                                           | [Optional] URL of logo displayed in top left corner (leave empty if no logo is wanted)                              |
-| Show community name                                | Toggle visibility of community name in top left corner                                                              |
-| Favicon URL                                        | URL of a custom favicon (displayed on the browser tab). [Tutorial](https://favicon.io/tutorials/what-is-a-favicon/) |
-| Custom CSS                                         | [Optional] Ability to add custom CSS. Find a list if VyHub specific CSS Classes.                                    |
+| Attribute                                                          | Description                                                                          |
+|-------------------------------------------------------------------|-------------------------------------------------------------------------------------|
+| Header / Footer / Primary / Secondary / Success / Warning / Error Color | The colors of the theme.                                                       |
+| Light Header Color                                                | Uses light-colored text/icons in the header (for dark header colors).               |
+| Header Container                                                   | Constrains the header content to a centered container. (advanced settings)          |
+| Darkmode                                                           | Enables the dark theme variant.                                                     |
+| Background Image                                                   | Upload/URL of a background image (leave empty if a color is preferred).             |
+| Background Color                                                  | Background color (is overwritten by the background image, if set).                  |
+| Logo                                                              | [Optional] Logo displayed in the top left corner (leave empty if no logo is wanted).|
+| Logo Width                                                        | Width of the logo (slider, 50-150).                                                 |
+| Show Community Name                                               | Displays the community name in the header.                                          |
+| Custom CSS                                                        | [Optional] Add custom CSS to your instance. (advanced settings)                     |
+| Featured Servers for Shop Only                                   | Shop-only mode: up to two servers shown in the shop-only header.                    |
+
+`Header Container` and `Custom CSS` (and the `Success` / `Warning` / `Error` colors) are only available when advanced
+settings are enabled. `Featured Servers for Shop Only` is only shown when shop-only mode is enabled, which then hides
+the `Show Community Name`, `Logo Width` and `Header Container` options.
 
 ## Custom navigation links and websites
 

@@ -5,14 +5,64 @@ HTTP requests.
 
 > A reward needs to be assigned to a packet to be able to be bought by your players / your customers.
 
-| Attribute                                 | Description                                                                                                |
-|-------------------------------------------|------------------------------------------------------------------------------------------------------------|
-| Serverbundle                              | Serverbundle which the reward is assigned to (reward is executed on all servers in this bundle by default) |                          |
-| Only execute once                         | Reward is only executed once per server (including newly added servers)                                    |
-| Only execute on one Server                | Reward is only executed on one server in the serverbundle (must be paired with the previous option)        |
-| Execute again if packet has been extended | Execute this reward again if the packet got extended (e.g. by a subscription payment)                      |
-| Event                                     | Event on which the reward functionality is executed                                                        |
-| Limit to servers                          | Limit the reward to specific servers in the serverbundle (select the bundle first)                         |
+New rewards can be created from scratch (`Create Reward`) or from ready-made **Templates** for supported games. The
+available reward type and options depend on the selected serverbundle's server type.
+
+## General
+
+| Attribute                                        | Description                                                                                                                                                                          |
+|--------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Name                                             | Name of the reward                                                                                                                                                                 |
+| Serverbundle                                     | The reward is executed on all servers in the selected serverbundle, including servers added later. Can be left empty for rewards that are not serverbundle specific.               |
+| Type                                             | The reward type (see below). Selectable once a serverbundle is chosen.                                                                                                             |
+| Execute on event                                 | Event on which the reward is executed (see [Events](#events))                                                                                                                      |
+| Limit to servers                                 | [Optional] Limit execution to the selected servers of the serverbundle. If none are selected, the reward runs on all servers in the bundle. (COMMAND, SCRIPT, TEAMSPEAK_CHANNEL)   |
+| Only execute once (per packet)                   | If enabled, the reward is only executed once across ALL servers in the serverbundle, instead of every time the event happens                                                        |
+| Only execute on one server                       | If enabled, the reward is only executed on the first server the user connects to. Must be combined with *Only execute once*.                                                        |
+| Execute again if packet has been extended        | Execute this reward again if the packet has been extended (e.g. on a subscription payment)                                                                                         |
+
+> The *Only execute once*, *Only execute on one server* and *Execute again if packet has been extended* options are only
+> available for the COMMAND, SCRIPT and HTTP reward types.
+
+## Reward Types
+
+The reward type determines what the reward does. Which types are offered depends on the server type of the selected
+serverbundle.
+
+| Type              | Description                                    | Availability                                                    |
+|-------------------|------------------------------------------------|----------------------------------------------------------------|
+| COMMAND           | Execute a command on the server(s)             | All server types except Teamspeak 3 and Discord                |
+| SCRIPT            | Execute a script on the server(s)              | GMOD and FiveM only                                            |
+| CREDITS           | Add credits to the buyer's account             | All server types                                              |
+| MEMBERSHIP        | Add a group membership                         | All server types                                              |
+| HTTP              | Send an HTTP request                           | All server types                                              |
+| TEAMSPEAK_CHANNEL | Create a Teamspeak channel                     | Teamspeak 3 only                                              |
+
+### Type-specific fields
+
+| Type              | Fields                                                                                                                                            |
+|-------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
+| COMMAND           | **Command** – the command to execute (with autocomplete)                                                                                        |
+| SCRIPT            | **Script** – the script to execute                                                                                                              |
+| CREDITS           | **Credits** – amount of credits to add                                                                                                          |
+| MEMBERSHIP        | **Group** – the group the membership is assigned to                                                                                            |
+| HTTP              | **Method** (GET/POST/PUT/DELETE/PATCH), **URL**, **Number of Retries** (1-10, default 3) and optional **Headers** (key/value pairs)             |
+| TEAMSPEAK_CHANNEL | **Parent Channel ID**, **Channel Group ID**, **Client Limit** and **Delete on expiration**                                                     |
+
+## Events
+
+The **Execute on event** option controls when the reward is triggered. The available events depend on the reward type.
+
+| Event                    | Description                                                    |
+|--------------------------|---------------------------------------------------------------|
+| Execute directly         | Execute the reward immediately                                 |
+| Execute on connect       | Execute when the user connects (COMMAND / SCRIPT only)         |
+| Execute on spawn         | Execute when the user spawns (COMMAND / SCRIPT only)          |
+| Execute on death         | Execute when the user dies (COMMAND / SCRIPT only)            |
+| Execute when applied packet becomes inactive | Execute when the applied packet becomes inactive |
+
+> COMMAND and SCRIPT rewards offer all events. CREDITS, MEMBERSHIP and HTTP rewards only offer *Execute directly* and
+> *Execute when applied packet becomes inactive*. TEAMSPEAK_CHANNEL rewards are always executed directly.
 
 ## Testing your Rewards
 

@@ -5,14 +5,40 @@ your use case.
 
 ## Attributes
 
-| Attribute           | Description                                                         |
-|---------------------|---------------------------------------------------------------------|
-| Permission Level    | Used to determine the ability to target other users                 |
-| Max Ban Length      | [Optional] Max length of bans the user can create                   |
-| Is Team             | Whether the group will be shown on the team overview page           |
-| Properties          | Permission management and access control for functionalities        |
-| Negative Properties | [Advanced] Negative properties (e.g. ban players from your website) |
-| Mappings            | Mappings from VyHub groups to server/in-game ranks/groups/roles     |
+Groups are configured in a dialog split into three tabs: `General`, `Properties` and `Mappings`.
+
+### General
+
+| Attribute        | Description                                                                                                                                                                             |
+|------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Name             | Name of the group (required)                                                                                                                                                           |
+| Permission Level | Used to determine the ability to target other users (required, 0 - 100000)                                                                                                             |
+| Max Ban Length   | [Advanced, Optional] Max length of bans the user can create, in days (0 - 365). Leave empty for infinite bans.                                                                         |
+| Color            | Color the group is displayed with                                                                                                                                                     |
+| Is Team          | Members of the group will be shown on the team page                                                                                                                                   |
+| Protected        | Changes to memberships in this group are not allowed from third party applications like gameservers. Additionally, members of this group might be protected from bans.                |
+
+### Properties
+
+| Attribute          | Description                                                                     |
+|--------------------|--------------------------------------------------------------------------------|
+| Properties         | Permission management and access control for functionalities                   |
+| Negated Properties | [Advanced] Negated properties (e.g. ban players from your website)             |
+
+### Mappings
+
+| Attribute                            | Description                                                                                           |
+|--------------------------------------|-----------------------------------------------------------------------------------------------------|
+| Serverbundle                         | Serverbundle the mapping is scoped for. Leave empty to make the mapping valid for all serverbundles. |
+| Name of the group/rank/role          | Name of the group/rank/role on the server                                                            |
+
+## Managing Groups
+
+The group overview lists all groups sorted by permission level. For each group you can:
+
+- Duplicate the group (a copy suffixed with `(Copy)` is created).
+- View the active memberships of the group.
+- Edit or delete the group.
 
 ## Assigning Groups
 

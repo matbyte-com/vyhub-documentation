@@ -44,11 +44,11 @@ Pick whichever matches what you already have.
         git clone https://github.com/matbyte-com/vyhub-onprem.git /opt/vyhub-onprem
         ```
 
-    3. Navigate into the `vyhub-onprem` folder and run `first-setup.sh`:
+    3. Navigate into the `vyhub-onprem` folder and run `gen-secrets.sh`:
 
         ``` bash
         cd /opt/vyhub-onprem
-        ./first-setup.sh
+        ./gen-secrets.sh
         ```
 
     4. Put your SSL certificate and key in the folder `/opt/vyhub-onprem/nginx/certs/`. They should be in PEM format and named `vyhub.crt` and `vyhub.key`.
@@ -73,7 +73,7 @@ Pick whichever matches what you already have.
         docker compose up -d
         ```
 
-        Check that all 6 containers are running:
+        Check that all 8 containers are running:
         ``` bash
         docker compose ps
         ```
@@ -91,7 +91,7 @@ Pick whichever matches what you already have.
 
     ### Prerequisites
 
-    **On your laptop:**
+    **On your laptop (a Linux machine, or WSL on Windows):**
 
     - [`tofu`](https://opentofu.org/docs/intro/install/) >= 1.6
     - `ssh`, `ssh-keygen`, `curl`, `jq`, `openssl`
@@ -109,8 +109,8 @@ Pick whichever matches what you already have.
 
         ``` bash
         git clone https://github.com/matbyte-com/vyhub-onprem.git
-        cd vyhub-onprem/setup
-        ./setup.sh
+        cd vyhub-onprem
+        ./hcloud-setup.sh
         ```
 
     2. The script will:
@@ -127,13 +127,13 @@ Pick whichever matches what you already have.
     The script is idempotent. If something fails mid-way, you can re-run individual steps:
 
     ``` bash
-    ./setup.sh apply      # re-run `tofu apply` with the saved tfvars
-    ./setup.sh outputs    # show server IPs + management cheatsheet
-    ./setup.sh wait       # block until cloud-init finishes (streams the log)
-    ./setup.sh logs       # tail the cloud-init / install.sh output log
-    ./setup.sh ssh        # ssh root@<server>
-    ./setup.sh certbot    # request / replace the Let's Encrypt cert
-    ./setup.sh redeploy   # destroy + reprovision from scratch
-    ./setup.sh destroy    # delete the Hetzner resources
+    ./hcloud-setup.sh apply      # re-run `tofu apply` with the saved tfvars
+    ./hcloud-setup.sh outputs    # show server IPs + management cheatsheet
+    ./hcloud-setup.sh wait       # block until cloud-init finishes (streams the log)
+    ./hcloud-setup.sh logs       # tail the cloud-init / install.sh output log
+    ./hcloud-setup.sh ssh        # ssh root@<server>
+    ./hcloud-setup.sh certbot    # request / replace the Let's Encrypt cert
+    ./hcloud-setup.sh redeploy   # destroy + reprovision from scratch
+    ./hcloud-setup.sh destroy    # delete the Hetzner resources
     ```
 

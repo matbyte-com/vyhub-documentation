@@ -10,10 +10,11 @@ Requirement sets are used for advanced requirements to limit access to an action
 
 ## Attributes
 
-| Attribute | Description                             |
-|-----------|-----------------------------------------|
-| Name      | Unique name to identify the set         |
-| Formula   | Formula, which is going to be evaluated |
+| Attribute | Description                      |
+|-----------|----------------------------------|
+| Name      | Name to identify the set         |
+
+When editing a requirement set, you can also manage its requirements and its logical formula (see below).
 
 ## Add / Edit
 
@@ -26,25 +27,33 @@ Requirement Sets and Requirements can be added and edited through the designated
 | Type      | Type of requirement                          |
 | Operator  | Operator of requirement                      |
 | Key       | Relation to other resources (e.g. Packet-id) |
-| Value     | Desired value (permission level 42)          |
+| Value     | Desired value (e.g. permission level 42)     |
+
+The available operators and additional fields (Key/Value) depend on the selected type.
 
 ### Available Types
 
-This list gives an overview of all available types with their respective operations
+This list gives an overview of all available types with their respective operators.
 
-- Group member (EQ, NEQ)
-- Permission level (EQ, NEQ, LEQ, GEQ, LT, GT)
-- Permission level within a specific **[serverbundle](server.md)**
-- Property (HAVE, NHAVE)
-- Property within a specific **[serverbundle](server.md)**
-- User Attribute (EQ, NEQ, LEQ, GEQ, LT, GT, HAVE, NHAVE)
-- Packet (ACTIVE, INACTIVE, NEVER_ACTIVE, ONLY_ACTIVE, ONLY_INACTIVE)
-- Date (EQ, NEQ, LEQ, GEQ, LT, GT)
-- User-Self (NEQ, EQ)
+- Groupmember (Equal, Not Equal) - select a group
+- Permission Level (Equal, Not Equal, Less Equal Than, Less Than, Greater Than, Greater Equal Than) - value is a permission level (0-100)
+- Permission Level (in Serverbundle) - like Permission Level, but for a specific **[serverbundle](server.md)**
+- Property (Have, Have Not) - value is a property name
+- Property (in Serverbundle) - like Property, but for a specific **[serverbundle](server.md)**
+- User Attribute (Equal, Not Equal, Less Equal Than, Less Than, Greater Than, Greater Equal Than) - key is the attribute name, value is the attribute value
+- Packet (Active, Only Active, Only Inactive, Inactive, Never Active) - select a packet
+- Date (Equal, Not Equal, Less Equal Than, Less Than, Greater Than, Greater Equal Than) - value is a date
+- User Self (Equal, Not Equal)
 
 ### Formula
 
-With the formula, multiple requirements can be chained together. A logical formula can be created.
+With the formula, multiple requirements can be chained together into a logical formula. Each requirement is referenced by its ID (shown in the requirements table). Use the following operators:
+
+- `|` for an OR connection
+- `&` for an AND connection
+- parentheses `()` for grouping
+
+After entering a formula, use the `Edit Formula` button to validate and save it.
 
 ### Requirement Set Tester
 

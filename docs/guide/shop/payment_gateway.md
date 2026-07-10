@@ -3,14 +3,22 @@
 Payment gateways are used to accept payments from your users. You can create multiple payment gateways to offer your
 users more optionality. Without creating a payment gateway, users can't buy anything from your shop.
 
-| Attribute   | Description                                                                          |
-|-------------|--------------------------------------------------------------------------------------|
-| Name        | Name of gateway                                                                      |
-| Subtitle    | Subtitle shown during checkout                                                       |
-| Image URL   | [Optional] Image URL of the payment gateway. When no image is set, defaults are used |  
-| Enabled     | Enable the payment gateway                                                           |
-| Environment | Environment of gateway (Sandbox / Production)                                        |
-| Secrets     | Secrets provided by payment providers                                                |
+These common attributes are available for every gateway type:
+
+| Attribute | Description |
+|-----------|-------------|
+| Type | The gateway type chosen when creating the gateway (read-only). |
+| Name | Name of the gateway. |
+| Subtitle | Subtitle shown during checkout. |
+| Image | Optional. Default images are used when no image is uploaded. |
+| Enabled | Enable the payment gateway. |
+
+Depending on the selected type, additional attributes (such as environment, keys and secrets provided by the payment
+provider) are shown. These are described in the per-gateway sections below. Secret attributes are write-only: once saved,
+your input is not shown again and is only overwritten if you enter a new value. When editing a Stripe or PayPal gateway,
+a read-only `Webhook URL` field is also shown.
+
+Deleting a gateway also deletes all purchases and payments that used it and cannot be undone. Consider disabling a gateway instead.
 
 Please follow the instructions below to add a payment gateway.
 
@@ -62,7 +70,7 @@ Supported Stripe API version: 2024-06-20 and older
 2. (Only required before Sepember 2024) Enable
    `Stripe Workbench` [here](https://dashboard.stripe.com/settings/early_access).
 3. Open [Stripe Workbench](https://dashboard.stripe.com/workbench/overview) and locate the `API keys` section.
-4. In your VyHub instance, create a Stripe payment gateway, insert your `Public Key` and `Private Key` and select your
+4. In your VyHub instance, create a Stripe payment gateway, insert your `Public Key` and `Secret Key` and select your
    desired `Payment Methods`.
 5. Click `Create` and edit the payment gateway again. At the bottom, copy the `Webhook URL` to your clipboard.
 6. Create a webhook endpoint

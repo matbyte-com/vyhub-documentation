@@ -15,6 +15,7 @@ nav:
     - central/custom_domain.md
     - central/affiliate.md
   - Guide:
+    - guide/general.md
     - Shop:
         - guide/shop/general.md
         - guide/shop/packet.md

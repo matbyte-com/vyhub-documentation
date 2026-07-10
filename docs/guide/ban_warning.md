@@ -15,7 +15,11 @@ You can also integrate the Warning System with other plugins that automatically 
 
 | Attribute    | Description                                                             |
 |--------------|-------------------------------------------------------------------------|
+| User         | User that is being warned                                               |
+| Reason       | Reason for the warning                                                  |
 | Serverbundle | Serverbundle the warning is targeting and where the ban is then created |
+
+When editing a warning, only the `Reason` can be changed.
 
 ### Add / Edit
 
@@ -25,11 +29,13 @@ Warnings can be added and edited through the designated `warning` page.
 
 You can find further warning configurations in the settings.
 
-| Attribute                             | Description                                                                                   |
-|---------------------------------------|-----------------------------------------------------------------------------------------------|
-| Warning Time To Live                  | How many days a warning is considered as `active`                                             |
-| Number of warning till automatic bans | How many `active` warnings it requires for a user to get banned (0 to disable automatic bans) |
-| Length of automatic ban               | How long (minutes) a user will be banned if the warning threshold has been reached            |
+| Attribute                                 | Description                                                                    |
+|-------------------------------------------|-------------------------------------------------------------------------------|
+| Warning Time To Live (days)               | Time (in days) until a warning is marked as expired                           |
+| Number of warnings till automatic ban     | How many `active` warnings a user needs to get banned (0 for no automatic bans) |
+| Length of automatic ban (minutes)         | How long (in minutes) a user is banned once the warning threshold is reached  |
+
+Users are banned automatically when they reach the specified number of `active` warnings.
 
 ## Bans
 
@@ -38,10 +44,14 @@ possible, by leaving the serverbundle field blank.
 
 ### Attributes
 
-| Attribute    | Description                                                         |
+| Attribute    | Description                                                          |
 |--------------|---------------------------------------------------------------------|
-| Length       | [Optional] Length of the ban (empty for lifetime ban)               |
+| User         | User that is being banned                                           |
+| Reason       | [Optional] Reason for the ban                                       |
+| Length       | [Optional] Length of the ban in minutes (empty for lifetime ban)   |
 | Serverbundle | [Optional] Serverbundle the ban is targeting (empty for global ban) |
+
+When editing a ban, the `Reason`, `Length` and `Serverbundle` can be changed.
 
 ### Add / Edit
 
@@ -51,9 +61,9 @@ Bans can be added and edited through the designated `Bans` page.
 
 You can find further ban configurations in the settings.
 
-| Attribute       | Description                                   |
-|-----------------|-----------------------------------------------|
-| Ban Protest URL | [Optional] Target URL when user protest a ban |
+| Attribute                 | Description                                                                                              |
+|---------------------------|--------------------------------------------------------------------------------------------------------|
+| External ban protest URL  | [Optional] Leave empty for the VyHub ticket system, or enter a link to redirect users to an external site |
 
 ### Protests
 

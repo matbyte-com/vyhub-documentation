@@ -21,7 +21,7 @@
         docker compose up -d --force-recreate
         ```
 
-    4. Check that all 6 containers are running:
+    4. Check that all 8 containers are running:
         ``` bash
         docker compose ps
         ```
@@ -47,5 +47,5 @@
     systemctl list-timers --all | grep -E 'vyhub|apt-daily'
     journalctl -u vyhub-onprem-update.service  # container update logs
     journalctl -u unattended-upgrades.service  # OS upgrade logs
-    sudo /opt/vyhub-onprem/setup/install.sh update   # run a container update on demand
+    sudo /opt/vyhub-onprem/install.sh update   # run a container update on demand
     ```

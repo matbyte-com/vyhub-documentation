@@ -2,6 +2,15 @@
 
 VyHub allows you to monetize your Discord server. It is possible to sync groups between VyHub and Discord.
 
+The `Authorization` settings configure the login providers of your instance. They are split into a **Steam** and a
+**Discord** tab.
+
+## Steam
+
+| Attribute | Description |
+|-----------|-------------|
+| Steam API Key | It's highly recommended to set your Steam API key here. It is used to fetch user data from Steam. Get one at the [Steam API key page](https://steamcommunity.com/dev/apikey). |
+
 ## Authorization Setup
 
 1. In your VyHub instance go to the `Authorization` settings and enable Discord.
@@ -11,6 +20,16 @@ VyHub allows you to monetize your Discord server. It is possible to sync groups 
    ![Discord Developer Settings](../assets/authorization_guide/discord_developer_portal.png)
 5. Get your `bot_token` and enable the `presence` and `members` intent.
    ![Discord Bot Settings](../assets/authorization_guide/discord_bot_settings.png)
+
+The following fields are available on the `Discord` tab of the `Authorization` settings:
+
+| Attribute | Description |
+|-----------|-------------|
+| Discord | Toggle that enables Discord as a login provider. The fields below appear once it is enabled. |
+| Client ID | The OAuth client ID of your Discord application (digits only). |
+| Client Secret | The OAuth client secret of your Discord application. |
+| Bot Token | The token of your Discord bot. |
+| Discord Redirect URL | Read-only URL that must be added as a redirect URL in the Discord Developer Portal. |
 
 ## Setup
 

@@ -1,6 +1,13 @@
 # Legal
 
-You are obliged to follow the local laws. In the European Union, it is at least necessary to have terms of use and a privacy policy.
+You are obliged to follow the local laws. In most countries it is mandatory to have at least the website operator's
+contact details, terms of use and a privacy policy.
+
+## Editing your legal information
+
+In the settings under `Legal`, use the built-in rich-text editor to write your legal information (e.g. imprint, terms
+of use and privacy policy). Press `Save` to store the content. The content must not be empty. Once saved, the legal
+information is shown to your users in the footer.
 
 ## Example privacy policy
 

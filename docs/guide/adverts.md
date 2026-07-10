@@ -9,8 +9,11 @@ The interval can be changed per server in the configuration file of the game int
 |--------------|-------------------------------------------------------------------------|
 | Title        | Title of the advert, not shown to users.                                |
 | Content      | The content that should be printed to the chat. Multiple lines allowed. |
+| Enabled      | Whether the advert is active and printed to the chat.                   |
 | Color        | The color of the advert message. Not supported by Minecraft.            |
 | Serverbundle | The serverbundles where the advert should be shown.                     |
+
+Adverts can be reordered via drag and drop, and edited or deleted using the buttons on each entry.
 
 ## Text Colors
 It is possible to change the text color within the message by using color tags.
