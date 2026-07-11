@@ -1,5 +1,12 @@
 # Changelog
 
+## v3.3.1
+
+Released: 2026-07-12
+
+- Preparations for new pricing plans
+- [Docs] Improved all documentation pages
+
 ## v3.3.0
 
 Released: 2026-05-03
