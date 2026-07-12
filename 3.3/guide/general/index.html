@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://docs.vyhub.net/3.3/guide/user/">
+        <link rel="canonical" href="https://docs.vyhub.net/3.3/guide/general/">
       
       
-        <link rel="prev" href="../server/">
+        <link rel="prev" href="../../central/affiliate/">
       
       
-        <link rel="next" href="../../game/integrations/">
+        <link rel="next" href="../shop/general/">
       
       
       <link rel="icon" href="../../assets/favicon.png">
@@ -22,7 +22,7 @@
     
     
       
-        <title>User Dashboard - VyHub Docs</title>
+        <title>General Settings - VyHub Docs</title>
       
     
     
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#user-dashboard" class="md-skip">
+        <a href="#general-settings" class="md-skip">
           Skip to content
         </a>
       
@@ -111,7 +111,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              User Dashboard
+              General Settings
             
           </span>
         </div>
@@ -249,7 +249,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="../general/" class="md-tabs__link">
+        <a href="./" class="md-tabs__link">
           
   
   Guide
@@ -728,10 +728,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../general/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    General Settings
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -740,6 +760,44 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#general-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      General Configuration
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#branding-and-meta-tags" class="md-nav__link">
+    <span class="md-ellipsis">
+      Branding and Meta Tags
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1328,30 +1386,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    User Dashboard
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../user/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1360,35 +1398,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#urls" class="md-nav__link">
-    <span class="md-ellipsis">
-      URLs
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1811,9 +1820,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#urls" class="md-nav__link">
+  <a href="#general-configuration" class="md-nav__link">
     <span class="md-ellipsis">
-      URLs
+      General Configuration
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#branding-and-meta-tags" class="md-nav__link">
+    <span class="md-ellipsis">
+      Branding and Meta Tags
     </span>
   </a>
   
@@ -1838,16 +1856,88 @@
   
 
 
-<h1 id="user-dashboard">User Dashboard</h1>
-<p>The user dashboard shows important information about the selected user.</p>
-<h2 id="urls">URLs</h2>
-<p>The dashboard is available under the following URLs:</p>
-<ul>
-<li><code>https://&lt;frontend-url&gt;/dashboard</code>: The dashboard of the currently logged-in user.</li>
-<li><code>https://&lt;frontend-url&gt;/user/&lt;user-id&gt;</code>: The dashboard of the VyHub user with ID <code>&lt;user-id&gt;</code>.</li>
-<li><code>https://&lt;frontend-url&gt;/profile/&lt;provider&gt;/&lt;id&gt;</code>: The dashboard of the <code>&lt;provider&gt;</code> user with ID <code>&lt;id&gt;</code>.</li>
-</ul>
-<p>For example: <code>https://&lt;frontend-url&gt;/profile/steam/76561197960287930</code></p>
+<h1 id="general-settings">General Settings</h1>
+<p>The <code>General</code> settings hold the basic configuration of your VyHub instance, such as the community name, the language and
+which features are shown to your users.</p>
+<h2 id="general-configuration">General Configuration</h2>
+<table>
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Community Name</td>
+<td>The name of your community. Shown in the header and used across the instance. (required)</td>
+</tr>
+<tr>
+<td>Enable Shop Only Mode (Simple)</td>
+<td>Hides or disables all features that are not shop related. Useful if you only want to use the shop.</td>
+</tr>
+<tr>
+<td>Enable Landingpage</td>
+<td>Shows a landing page as the start page of your instance.</td>
+</tr>
+<tr>
+<td>Enable Ticket System</td>
+<td>Enables the ticket system in the navigation.</td>
+</tr>
+<tr>
+<td>Enable Forum</td>
+<td>Enables the <a href="../forum/">forum</a> in the navigation. Requires the Forum add-on.</td>
+</tr>
+<tr>
+<td>Enable Team Page</td>
+<td>Shows the team page that lists your staff members.</td>
+</tr>
+<tr>
+<td>Enable FAQ Page</td>
+<td>Shows the FAQ page.</td>
+</tr>
+<tr>
+<td>Language</td>
+<td>The default language of your instance (required). Missing translations can be contributed <a href="https://github.com/matbyte-com/vyhub-lang">here</a>.</td>
+</tr>
+<tr>
+<td>Enable tutorial (first-steps)</td>
+<td>Shows the first steps tutorial in the bottom right corner. Visible to admins only.</td>
+</tr>
+<tr>
+<td>Google Analytics Tag</td>
+<td>Optional Google Analytics tag (e.g. <code>UA-00000000-0</code>) for your Google Analytics use. Only shown when advanced settings are enabled.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="branding-and-meta-tags">Branding and Meta Tags</h2>
+<p>These settings control how your instance appears in the browser and when shared as a link (SEO / social previews).</p>
+<table>
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Title</td>
+<td>The title shown in the browser tab and in link previews. Displayed in search engine results and when sharing on social media.</td>
+</tr>
+<tr>
+<td>Community Description</td>
+<td>A short description of your community. Displayed in search engine results and when sharing on social media.</td>
+</tr>
+<tr>
+<td>Favicon</td>
+<td>The icon shown in the browser tab. Uploaded as an image.</td>
+</tr>
+<tr>
+<td>Preview Image URL</td>
+<td>The image shown when your instance is shared as a link. Uploaded as an image.</td>
+</tr>
+</tbody>
+</table>
 
 
 
