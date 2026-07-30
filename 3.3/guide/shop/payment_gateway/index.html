@@ -2049,26 +2049,23 @@ isn't as good as with the normal PayPal gateway.</p>
 <li>Click <code>Create</code> and test if everything works fine.</li>
 </ol>
 <h2 id="stripe">Stripe</h2>
-<p><a href="https://www.youtube.com/watch?v=Ic9trvb89NM">Video Tutorial</a></p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>Supports recurring payments: yes
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>Supported Stripe API version: 2024-06-20 and older
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>Supported Stripe API version: 2026-06-24 and older
 </span></code></pre></div>
 <blockquote>
 <p>If you want to test the payments with a test account first, do the steps below, but with a <code>TEST</code> application.</p>
 </blockquote>
 <ol>
 <li><a href="https://dashboard.stripe.com/register">Create a Stripe account</a> or log into your existing one.</li>
-<li>(Only required before Sepember 2024) Enable
-   <code>Stripe Workbench</code> <a href="https://dashboard.stripe.com/settings/early_access">here</a>.</li>
-<li>Open <a href="https://dashboard.stripe.com/workbench/overview">Stripe Workbench</a> and locate the <code>API keys</code> section.</li>
+<li>Open <a href="https://dashboard.stripe.com/workbench/overview">Stripe Workbench</a> and locate the <code>API keys</code> section. Create a new Public and Secret key.</li>
 <li>In your VyHub instance, create a Stripe payment gateway, insert your <code>Public Key</code> and <code>Secret Key</code> and select your
    desired <code>Payment Methods</code>.</li>
 <li>Click <code>Create</code> and edit the payment gateway again. At the bottom, copy the <code>Webhook URL</code> to your clipboard.</li>
 <li>Create a webhook endpoint
-   using <a href="https://dashboard.stripe.com/workbench/webhooks/create?events=checkout.session.completed%2Cinvoice.paid%2Ccustomer.subscription.deleted">this link</a>,
-   click <code>Continue</code> and insert the copied URL to <code>Endpoint URL</code>. Then click <code>Create</code>.</li>
+   using <a href="https://dashboard.stripe.com/workbench/webhooks/create?events=checkout.session.completed%2Ccheckout.session.async_payment_succeeded%2Cinvoice.paid%2Ccustomer.subscription.deleted%2Ccharge.refund.updated">this link</a>,
+   click <code>Continue</code>, select <code>Webhook-Endpoint</code> and insert the copied URL to <code>Endpoint URL</code>. Then click <code>Create</code>.</li>
 <li>Go to the <a href="https://dashboard.stripe.com/workbench/webhooks/">Webhooks Tab</a>, select the created endpoint and click
-   <code>Reveal</code> on the <code>Signing Secret</code> and copy it to your clipboard.</li>
+   <code>Reveal</code> on the <code>Signing Secret</code> (<code>whsec_...</code>) and copy it to your clipboard.</li>
 <li>Back at the VyHub settings of your Stripe gateway, insert the copied secret into the <code>Webhook Secret</code> field and
    click <code>Edit</code>.</li>
 <li>(Optional) In the <code>Stripe</code> settings of the created webhook endpoint, click <code>Send test event</code> to test if everything
