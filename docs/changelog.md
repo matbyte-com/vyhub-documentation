@@ -36,7 +36,7 @@ Released: 2026-08-02
 - Make the invoice accent color configurable
 - Allow to order payment gateways
 
-**On-Prem:**
+**Self-Hosted:**
 
 - The app container now runs gunicorn and executes the ts3/discord bots in a dedicated process, which improves
   stability and memory usage
