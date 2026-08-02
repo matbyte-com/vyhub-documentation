@@ -1,5 +1,57 @@
 # Changelog
 
+## v4.0.0
+
+Released: 2026-08-02
+
+> This is a major release with many design improvements, new features for forum and shop, and a
+> large performance overhaul. Please read the update notes at the end of this section before
+> updating a self-hosted instance.
+
+> Please Report all problems you encounter directly via Discord or support page.
+
+**General:**
+
+- Update to Vuetify 4 with design improvements across the whole panel
+- Add subforums
+- Allow moving forum threads
+- Add ticket categories
+- Reorganize the shop settings
+- Rework requirement set editing with nested logic groups
+- Limit the (playtime) graph on the user dashboard to 1 year by default
+- Faster page loads
+- Significant memory and performance optimizations
+- Improve mail sending and prevent duplicate mails
+- Improve design of Team page
+- Show latest forum posts on news page
+- Add a new dark-golden themes
+
+**Shop:**
+
+- Add first cycle discounts, which apply the discounted price only to the first billing cycle
+- Add a new upgrade type that credits the value already invested in the old packet
+- Allow multiple recurring packets in the cart
+- PayPal is no longer offered for recurring packets with a period of more than one year
+- Fix refunds, coupons and credits in some edge cases
+- Make the invoice accent color configurable
+- Allow to order payment gateways
+
+**On-Prem:**
+
+- The app container now runs gunicorn and executes the ts3/discord bots in a dedicated process, which improves
+  stability and memory usage
+- Rework the invoice generation, invoices are now rendered by VyHub itself, pdf-api is not needed anymore
+- The parameter `VYHUB_PATH_PREFIX` has been removed. `VYHUB_ROOT_PATH` can be used instead. Make sure to pull the newest version of the `vyhub-onprem` repo.
+- The client IP is now read from the `X-Forwarded-For` header, and only when the request arrives from a peer
+  listed in `VYHUB_SERVER_FORWARD_IPS`, whose default changed from `*` to loopback and all private ranges.
+  **If you run your own reverse proxy, make sure it sets `X-Forwarded-For` — `X-Real-IP` alone is no longer
+  enough.** Otherwise all of your users share a single rate limit and the shop can no longer detect their
+  country. The bundled nginx config already does this, so make sure to pull the newest version of the
+  `vyhub-onprem` repo.
+- Added `VYHUB_SERVER_TRUST_CLOUDFLARE`. Enable it if your instance runs behind Cloudflare and cannot be
+  reached directly, so that the client IP is taken from Cloudflare's `CF-Connecting-IP` header.
+
+
 ## v3.3.1
 
 Released: 2026-07-12

@@ -73,7 +73,7 @@ Pick whichever matches what you already have.
         docker compose up -d
         ```
 
-        Check that all 8 containers are running:
+        Check that all 7 containers are running:
         ``` bash
         docker compose ps
         ```

@@ -21,7 +21,7 @@
         docker compose up -d --force-recreate
         ```
 
-    4. Check that all 8 containers are running:
+    4. Check that all 7 containers are running:
         ``` bash
         docker compose ps
         ```
