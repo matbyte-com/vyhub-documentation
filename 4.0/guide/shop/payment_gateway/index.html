@@ -2014,7 +2014,7 @@ users more optionality. Without creating a payment gateway, users can't buy anyt
 </table>
 <p>Depending on the selected type, additional attributes (such as environment, keys and secrets provided by the payment
 provider) are shown. These are described in the per-gateway sections below. Secret attributes are write-only: once saved,
-your input is not shown again and is only overwritten if you enter a new value. When editing a Stripe or PayPal gateway,
+your input is not shown again and is only overwritten if you enter a new value. When editing a PayPal gateway,
 a read-only <code>Webhook URL</code> field is also shown.</p>
 <p>Deleting a gateway also deletes all purchases and payments that used it and cannot be undone. Consider disabling a gateway instead.</p>
 <p>Please follow the instructions below to add a payment gateway.</p>
@@ -2057,22 +2057,19 @@ isn't as good as with the normal PayPal gateway.</p>
 </blockquote>
 <ol>
 <li><a href="https://dashboard.stripe.com/register">Create a Stripe account</a> or log into your existing one.</li>
-<li>Open <a href="https://dashboard.stripe.com/workbench/overview">Stripe Workbench</a> and locate the <code>API keys</code> section. Create a new Public and Secret key.</li>
-<li>In your VyHub instance, create a Stripe payment gateway, insert your <code>Public Key</code> and <code>Secret Key</code> and select your
-   desired <code>Payment Methods</code>.</li>
-<li>Click <code>Create</code> and edit the payment gateway again. At the bottom, copy the <code>Webhook URL</code> to your clipboard.</li>
-<li>Create a webhook endpoint
-   using <a href="https://dashboard.stripe.com/workbench/webhooks/create?events=checkout.session.completed%2Ccheckout.session.async_payment_succeeded%2Cinvoice.paid%2Ccustomer.subscription.deleted%2Ccharge.refund.updated">this link</a>,
-   click <code>Continue</code>, select <code>Webhook-Endpoint</code> and insert the copied URL to <code>Endpoint URL</code>. Then click <code>Create</code>.</li>
-<li>Go to the <a href="https://dashboard.stripe.com/workbench/webhooks/">Webhooks Tab</a>, select the created endpoint and click
-   <code>Reveal</code> on the <code>Signing Secret</code> (<code>whsec_...</code>) and copy it to your clipboard.</li>
-<li>Back at the VyHub settings of your Stripe gateway, insert the copied secret into the <code>Webhook Secret</code> field and
-   click <code>Edit</code>.</li>
-<li>(Optional) In the <code>Stripe</code> settings of the created webhook endpoint, click <code>Send test event</code> to test if everything
-   works fine.</li>
+<li>Open <a href="https://dashboard.stripe.com/workbench/overview">Stripe Workbench</a> and locate the <code>API keys</code> section. Create a new Public and Secret key or copy the already existing ones.</li>
+<li>In your VyHub instance, create a Stripe payment gateway, insert your <code>Public Key</code> and <code>Secret Key</code> and select your desired <code>Payment Methods</code>.</li>
+<li>Click <code>Create</code>.</li>
+<li>(Optional) Go to the <a href="https://dashboard.stripe.com/workbench/webhooks/">Webhooks Tab</a>, select the endpoint created by VyHub and click <code>Send test event</code> to test if everything works fine.</li>
 <li>(Optional) In the settings of the payment gateway, enable <code>Accept pending payments</code> to enable fast payment
-    processing for the Stripe payment gateways that take several hours/days until a payment is finished.</li>
+   processing for the Stripe payment methods that take several hours/days until a payment is finished.</li>
 </ol>
+<blockquote>
+<p>If you use a restricted API key instead of the standard secret key, make sure it has write permission for
+<code>Webhook Endpoints</code>. Otherwise VyHub can't create the webhook and payments won't be processed.</p>
+</blockquote>
+<p>The webhook is also kept up to date automatically: if the address of your instance changes, VyHub updates the endpoint,
+and when you delete the payment gateway, the endpoint is removed from your Stripe account again.</p>
 <h2 id="paysafecard">Paysafecard</h2>
 <p><code>Supports recurring payments: no</code></p>
 <blockquote>
