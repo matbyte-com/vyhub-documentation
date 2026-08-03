@@ -1,5 +1,14 @@
 # Changelog
 
+## v4.0.1
+
+Released: 2026-08-03
+
+**Shop:**
+
+- Fix a problem with the retrieval of new subscription payments
+- Stripe webhooks are now created and removed automatically, the webhook secret does not have to be entered manually anymore
+
 ## v4.0.0
 
 Released: 2026-08-02

@@ -15,7 +15,7 @@ These common attributes are available for every gateway type:
 
 Depending on the selected type, additional attributes (such as environment, keys and secrets provided by the payment
 provider) are shown. These are described in the per-gateway sections below. Secret attributes are write-only: once saved,
-your input is not shown again and is only overwritten if you enter a new value. When editing a Stripe or PayPal gateway,
+your input is not shown again and is only overwritten if you enter a new value. When editing a PayPal gateway,
 a read-only `Webhook URL` field is also shown.
 
 Deleting a gateway also deletes all purchases and payments that used it and cannot be undone. Consider disabling a gateway instead.
@@ -65,21 +65,18 @@ Supported Stripe API version: 2026-06-24 and older
 > If you want to test the payments with a test account first, do the steps below, but with a `TEST` application.
 
 1. [Create a Stripe account](https://dashboard.stripe.com/register) or log into your existing one.
-3. Open [Stripe Workbench](https://dashboard.stripe.com/workbench/overview) and locate the `API keys` section. Create a new Public and Secret key.
-4. In your VyHub instance, create a Stripe payment gateway, insert your `Public Key` and `Secret Key` and select your
-   desired `Payment Methods`.
-5. Click `Create` and edit the payment gateway again. At the bottom, copy the `Webhook URL` to your clipboard.
-6. Create a webhook endpoint
-   using [this link](https://dashboard.stripe.com/workbench/webhooks/create?events=checkout.session.completed%2Ccheckout.session.async_payment_succeeded%2Cinvoice.paid%2Ccustomer.subscription.deleted%2Ccharge.refund.updated),
-   click `Continue`, select `Webhook-Endpoint` and insert the copied URL to `Endpoint URL`. Then click `Create`.
-7. Go to the [Webhooks Tab](https://dashboard.stripe.com/workbench/webhooks/), select the created endpoint and click
-   `Reveal` on the `Signing Secret` (`whsec_...`) and copy it to your clipboard.
-8. Back at the VyHub settings of your Stripe gateway, insert the copied secret into the `Webhook Secret` field and
-   click `Edit`.
-9. (Optional) In the `Stripe` settings of the created webhook endpoint, click `Send test event` to test if everything
-   works fine.
-10. (Optional) In the settings of the payment gateway, enable `Accept pending payments` to enable fast payment
-    processing for the Stripe payment gateways that take several hours/days until a payment is finished.
+2. Open [Stripe Workbench](https://dashboard.stripe.com/workbench/overview) and locate the `API keys` section. Create a new Public and Secret key or copy the already existing ones.
+3. In your VyHub instance, create a Stripe payment gateway, insert your `Public Key` and `Secret Key` and select your desired `Payment Methods`.
+4. Click `Create`.
+5. (Optional) Go to the [Webhooks Tab](https://dashboard.stripe.com/workbench/webhooks/), select the endpoint created by VyHub and click `Send test event` to test if everything works fine.
+6. (Optional) In the settings of the payment gateway, enable `Accept pending payments` to enable fast payment
+   processing for the Stripe payment methods that take several hours/days until a payment is finished.
+
+> If you use a restricted API key instead of the standard secret key, make sure it has write permission for
+> `Webhook Endpoints`. Otherwise VyHub can't create the webhook and payments won't be processed.
+
+The webhook is also kept up to date automatically: if the address of your instance changes, VyHub updates the endpoint,
+and when you delete the payment gateway, the endpoint is removed from your Stripe account again.
 
 ## Paysafecard
 
