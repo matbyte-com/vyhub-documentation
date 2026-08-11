@@ -1,5 +1,16 @@
 # Changelog
 
+## v4.0.2
+
+Released: 2026-08-11
+
+**General:**
+
+- Fix navigation bar dropdowns on mobile
+- Fix the layout of the server status component
+- Improve TeamSpeak 3 and Discord synchronization error handling
+
+
 ## v4.0.1
 
 Released: 2026-08-03
