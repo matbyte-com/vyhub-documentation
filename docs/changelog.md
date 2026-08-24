@@ -12,7 +12,7 @@ Released: 2026-08-24
 ## v4.0.3
 
 Released: 2026-08-16
-q
+
 **Shop:**
 
 - Added a "Right of Withdrawal" form that can be enabled in the shop settings. It allows users to easily submit a withdrawal request to the ticket system, also without login.
