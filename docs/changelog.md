@@ -1,5 +1,14 @@
 # Changelog
 
+## v4.1.0
+
+Released: 2026-08-25
+
+- Add notifications for the forum together with the option to subscribe to topics and threads
+- Fix an error when editing HTTP rewards
+- Allow creating a reward directly from the Packet form
+- Smaller improvements
+
 ## v4.0.5
 
 Released: 2026-08-24
